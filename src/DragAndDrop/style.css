@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Mukta', sans-serif;
+}
+
+body {
+	font-size: 100%;
+}
+
+.map-body {
+	background-color: #22262e;
+	color: #798eb0;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	padding-top: 4rem;
+	display: flex;
+	justify-content: center;
+}
+
+.ad {
+	width: 300px;
+	height: 250px;
+	background-image: url("./assets/banner-bg.png");
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.wip {
+	position: absolute;
+	width: 150px;
+	height: 100vh;
+	left: 0;
+	top: 10;
+	background-color: #eeeeee;
+	border-right: 1px dotted;
+}
+
+#before-map {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.imgIcons {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.imgIcons img {
+	margin: 0 .4rem;
+}
+
+.imgIcons img:hover {
+	transform: scale(0.9);
+	transition: all 2s;
+}
+
+.afterAd {
+	width: 300px;
+	height: 250px;
+	background-image: url("./assets/after-main-bg.png");
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.afterMapImg {
+	background-image: url("./assets/after-map.png");
+}
+
+.afterText {
+	animation-name: scale;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(0.7);
+	}
+	50% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(0.7);
+	}
+}
